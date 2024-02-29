@@ -8,10 +8,19 @@ const newGame = {
     type: "game",
 };
 console.log(newGame);
+const newBoardGame = {
+    id: 20240228002,
+    title: "Chip & Dale",
+    releaseYear: "1993.12.10",
+    rating: 10,
+    type: "boardgame",
+    numberOfPlayers: 2,
+};
+console.log(newBoardGame);
 // 4. Sukurti inputus, per juos ir bus pridedamas žaidimas arba boardgame; // `Vienas iš input turės būt selection input kuris nusakys tipą;
 const selectInput = document.getElementById("select-input");
 const numberofPlayersInput = document.getElementById("number-of-players-input");
-selectInput.addEventListener("click", () => {
+selectInput.addEventListener("change", () => {
     if (selectInput.value === "Game") {
         numberofPlayersInput.style.display = "none";
     }

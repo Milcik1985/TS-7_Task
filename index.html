@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love Game</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>Welcome to Love Game Page!</header>
+    <div class="type-selection">
+        <button id="select-type" class="board-games">Board Games</button>
+        <button id="select-type" class="games">Games</button>
+        <button id="select-type" class="all-games">All Games</button>
+    </div>
     <div class="container">
         <select name="Select Game Type" id="select-input">
-            <option value="">Choose Game Type</option>
-            <option value="text">Game</option>
-            <option value="text">Board Game</option>
+            <option>Choose Game Type</option>
+            <option>Game</option>
+            <option>Board Game</option>
         </select>
-        <input type="text" placeholder="ID">
-        <input type="text" placeholder="Title">
-        <input type="text" placeholder="Release Year">
-        <input type="text" placeholder="Rating">
-        <input type="text" placeholder="Platform">
-        <input type="text" id="number-of-players-input" placeholder="Number Of Players">
-        <button id="add-game">Add Game</button>
+        <input placeholder="ID" id="id">
+        <input placeholder="Title" id="title">
+        <input placeholder="Release Year" id="release-year">
+        <input placeholder="Rating" id="rating">
+        <input placeholder="Platform" id="platform">
+        <input id="number-of-players-input" placeholder="number-Of-players">
+        <button id="add-game" class="add-game">Add Game</button>
+    </div>
+
+    <div id="game-container">
+        
     </div>
     <script type="module" src="./src/script.js"></script>
 </body>

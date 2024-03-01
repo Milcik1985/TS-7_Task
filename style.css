@@ -2,6 +2,7 @@
 
 body {
     margin: 0px;
+    background-color: #A9A9A9;
 }
 
 header {
@@ -38,12 +39,13 @@ header {
 .game-card {
     min-width: 35%;
     padding: 0.5rem;
+    background-color: #7D7C7C;
 }
 
 div#game-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -58,4 +60,9 @@ div#game-container {
     min-width: 15%;
     border-radius: 1rem;
     background-color: orange;
+}
+
+input,
+select {
+    border-radius: 5px;
 }

@@ -113,10 +113,16 @@ addGameButton.addEventListener("click", () => {
             releaseYearWrapper.innerText = `Rating: ${game.rating}`;
             gameContainerWrapper.append(ratingWrapper);
             const platformWrapper: HTMLDivElement = document.createElement("div");
-            platformWrapper.innerText = `Platform: ${game.platform}`;
+
+            if ("platform" in game) {
+            platformWrapper.innerText = `Platform: ${game.platform as string}`;};
+
             gameContainerWrapper.append(platformWrapper);
             const numberOfPlayersWrapper: HTMLDivElement = document.createElement("div");
-            numberOfPlayersWrapper.innerText = `Number Of Players: ${game.numberOfPlayers}`;
+
+            if ("numberOfPlayers" in game) {
+            numberOfPlayersWrapper.innerText = `Number Of Players: ${game.numberOfPlayers}`;};
+
             gameContainerWrapper.append(numberOfPlayersWrapper);
             gameContainer.append(gameContainerWrapper);
 
